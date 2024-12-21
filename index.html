@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">TravelLogo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="hero text-dark text-center"
+      style="
+        background-image: url('https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=600');
+        height: 100vh;
+        background-size: cover;
+      "
+    >
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <h1 class="display-4 font-weight-bold">
+          Discover Your Next Destination
+        </h1>
+        <p class="lead">Plan your perfect getaway with us</p>
+        <a href="#packages" class="btn btn-primary btn-md">Explore Packages</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2>About Us</h2>
+        <p>
+          We are a dedicated travel agency committed to making your travel
+          dreams come true.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <i class="fas fa-plane fa-3x mb-3"></i>
+                <h5>Flight Booking</h5>
+                <p>Book flights at the best prices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <i class="fas fa-hotel fa-3x mb-3"></i>
+                <h5>Hotel Booking</h5>
+                <p>Find and book hotels worldwide.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <i class="fas fa-suitcase fa-3x mb-3"></i>
+                <h5>Custom Packages</h5>
+                <p>Create your personalized travel package.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Travel Packages</h2>
+        <div class="row">
+          <!-- Package 1 -->
+          <div class="col-md-3 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Beach Paradise"
+                class="card-img-top"
+              />
+              <div class="card-body text-center">
+                <h5>Beach Paradise</h5>
+                <p>$999 - Enjoy the sun and sand!</p>
+                <!-- Modal Trigger -->
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#packageModal1"
+                  class="btn btn-info"
+                >
+                  Read More
+                </button>
+
+                <!-- Modal -->
+                <!-- Package 1 Modal -->
+                <div
+                  id="packageModal1"
+                  class="modal fade"
+                  tabindex="-1"
+                  role="dialog"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5>Beach Paradise Details</h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Enjoy a week in our Beach Paradise package, including
+                        flights, accommodation, and meals.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 2 -->
+          <div class="col-md-3 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Beach Paradise"
+                class="card-img-top"
+              />
+              <div class="card-body text-center">
+                <h5>Beach Paradise</h5>
+                <p>$999 - Enjoy the sun and sand!</p>
+                <!-- Modal Trigger -->
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#packageModal1"
+                  class="btn btn-info"
+                >
+                  Read More
+                </button>
+
+                <!-- Modal -->
+                <!-- Package 1 Modal -->
+                <div
+                  id="packageModal1"
+                  class="modal fade"
+                  tabindex="-1"
+                  role="dialog"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5>Beach Paradise Details</h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Enjoy a week in our Beach Paradise package, including
+                        flights, accommodation, and meals.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- package 3 -->
+          <div class="col-md-3 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Beach Paradise"
+                class="card-img-top"
+              />
+              <div class="card-body text-center">
+                <h5>Beach Paradise</h5>
+                <p>$999 - Enjoy the sun and sand!</p>
+                <!-- Modal Trigger -->
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#packageModal1"
+                  class="btn btn-info"
+                >
+                  Read More
+                </button>
+
+                <!-- Modal -->
+                <!-- Package 1 Modal -->
+                <div
+                  id="packageModal1"
+                  class="modal fade"
+                  tabindex="-1"
+                  role="dialog"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5>Beach Paradise Details</h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Enjoy a week in our Beach Paradise package, including
+                        flights, accommodation, and meals.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- package 4 -->
+          <div class="col-md-3 mb-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Beach Paradise"
+                class="card-img-top"
+              />
+              <div class="card-body text-center">
+                <h5>Beach Paradise</h5>
+                <p>$999 - Enjoy the sun and sand!</p>
+                <!-- Modal Trigger -->
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#packageModal1"
+                  class="btn btn-info"
+                >
+                  Read More
+                </button>
+
+                <!-- Modal -->
+                <!-- Package 1 Modal -->
+                <div
+                  id="packageModal1"
+                  class="modal fade"
+                  tabindex="-1"
+                  role="dialog"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5>Beach Paradise Details</h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Enjoy a week in our Beach Paradise package, including
+                        flights, accommodation, and meals.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <!-- Contact Form -->
+        <form action="#" method="#" novalidate="">
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <input
+                type="text"
+                placeholder="Name"
+                required=""
+                class="form-control"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <input
+                type="email"
+                placeholder="Email"
+                required=""
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea
+              placeholder="Message"
+              required=""
+              class="form-control"
+              rows="4
+              "
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+      <div class="container">
+        <p class="mb-0">&copy; 2024 Travel Agency</p>
+        <p>Follow us on:</p>
+        <a href="#" class="text-white mr-3"
+          ><i class="fab fa-facebook-f"></i> Facebook</a
+        >
+        <a href="#" class="text-white mr-3"
+          ><i class="fab fa-twitter"></i> Twitter</a
+        >
+        <a href="#" class="text-white"
+          ><i class="fab fa-instagram"></i> Instagram</a
+        >
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
